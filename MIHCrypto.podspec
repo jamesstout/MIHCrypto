@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                     by OpenSSL. Supports RSA, DES, AES, ECC (Elliptic Curve Cryptography) and more."
   s.homepage     = "https://github.com/hohl/MIHCrypto"
   s.authors       =  {'Michael Hohl' => 'me@michaelhohl.net'}
-  s.source       = { :git => "https://github.com/hohl/MIHCrypto.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/jamesstout/MIHCrypto.git", :tag => "#{s.version}" }
   
 
   s.ios.deployment_target = '6.0'
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.xcconfig = { 'OTHER_CFLAGS' => '-DLIBRESSL', 
-        'LIBRARY_SEARCH_PATHS' => '"${PODS_ROOT}/OpenSSL-Universal/lib-ios"' }
+        'LIBRARY_SEARCH_PATHS' => '"${PODS_ROOT}/OpenSSL-Universal/macos"' }
 
   s.libraries = 'ssl', 'crypto'
 
